@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Illyas Hakim — IT Engineer</title>
+  <title>Illyas Hakim | IT Engineer</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -18,134 +18,140 @@
       align-items: center;
       justify-content: center;
       padding: 24px;
-      font-family: Inter, "Segoe UI", Arial, sans-serif;
-      color: #f5f7fa;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f5f5f5;
       background:
-        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.12), transparent 35%),
-        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.10), transparent 35%),
+        radial-gradient(circle at top left, #172554 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #0f3d3e 0%, transparent 35%),
         #080b12;
     }
 
     .profile-card {
       width: 100%;
-      max-width: 520px;
+      max-width: 620px;
       padding: 42px;
       text-align: center;
       background: rgba(17, 24, 39, 0.88);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 24px;
-      box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
       backdrop-filter: blur(14px);
     }
 
     .avatar {
-      width: 96px;
-      height: 96px;
+      width: 105px;
+      height: 105px;
       margin: 0 auto 22px;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 50%;
-      font-size: 30px;
-      font-weight: 800;
-      letter-spacing: 1px;
+      font-size: 38px;
+      font-weight: 700;
       color: #fff;
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
-      box-shadow: 0 10px 35px rgba(59, 130, 246, 0.3);
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      border: 4px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 10px 35px rgba(37, 99, 235, 0.35);
     }
 
     h1 {
-      font-size: 32px;
-      line-height: 1.2;
+      font-size: 36px;
       margin-bottom: 8px;
+      letter-spacing: -1px;
     }
 
     .role {
-      color: #60a5fa;
-      font-size: 16px;
+      color: #38bdf8;
+      font-size: 17px;
       font-weight: 600;
       margin-bottom: 28px;
     }
 
     .intro {
-      color: #aab3c2;
-      font-size: 15px;
+      color: #aeb8c8;
       line-height: 1.7;
-      margin-bottom: 28px;
-    }
-
-    .section-title {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: #697386;
-      margin-bottom: 14px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 9px;
       margin-bottom: 30px;
     }
 
-    .skill {
-      padding: 9px 14px;
-      border-radius: 999px;
+    .section-title {
       font-size: 13px;
-      color: #dbeafe;
-      background: rgba(37, 99, 235, 0.12);
-      border: 1px solid rgba(96, 165, 250, 0.18);
-      transition: 0.25s ease;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #718096;
+      margin-bottom: 16px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .skill {
+      min-height: 92px;
+      padding: 14px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: transform 0.25s ease, background 0.25s ease;
     }
 
     .skill:hover {
-      transform: translateY(-2px);
-      background: rgba(37, 99, 235, 0.22);
-      border-color: rgba(96, 165, 250, 0.4);
+      transform: translateY(-5px);
+      background: rgba(56, 189, 248, 0.09);
+    }
+
+    .skill-icon {
+      width: 36px;
+      height: 36px;
+      display: block;
+    }
+
+    .skill span {
+      font-size: 12px;
+      color: #d7deea;
+      font-weight: 600;
     }
 
     .facts {
-      padding-top: 24px;
-      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .fact {
-      color: #cbd5e1;
-      font-size: 15px;
-      line-height: 1.6;
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #dbeafe;
+      background: rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      font-size: 13px;
     }
 
-    .fact strong {
-      color: #fff;
-    }
-
-    .terminal {
-      margin-top: 28px;
-      padding: 14px 18px;
-      text-align: left;
-      border-radius: 12px;
-      background: #06080d;
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      font-family: "Courier New", monospace;
+    .footer {
+      margin-top: 30px;
+      color: #5f6b7d;
       font-size: 12px;
-      color: #86efac;
     }
 
-    .terminal span {
-      color: #64748b;
-    }
-
-    @media (max-width: 480px) {
+    @media (max-width: 560px) {
       .profile-card {
-        padding: 32px 22px;
+        padding: 32px 20px;
       }
 
       h1 {
-        font-size: 28px;
+        font-size: 30px;
+      }
+
+      .skills {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
@@ -161,32 +167,109 @@
     <div class="role">IT Engineer</div>
 
     <p class="intro">
-      IT Engineer yang minat membina, mengurus dan menyelesaikan
-      cabaran berkaitan infrastruktur, sistem, rangkaian dan teknologi.
+      IT Engineer yang minat terhadap infrastructure, cloud, networking,
+      cybersecurity dan teknologi moden. Suka menyelesaikan masalah
+      teknikal dan sentiasa mencari cabaran baharu.
     </p>
 
     <div class="section-title">Technical Skills</div>
 
     <div class="skills">
-      <span class="skill">Linux</span>
-      <span class="skill">Git</span>
-      <span class="skill">Docker</span>
-      <span class="skill">Cloud</span>
-      <span class="skill">Networks</span>
-      <span class="skill">CyberSecurity</span>
-      <span class="skill">Windows</span>
+
+      <!-- Linux -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Linux">
+          <circle cx="64" cy="64" r="60" fill="#111827"/>
+          <path fill="#f5f5f5" d="M64 20c-17 0-28 14-28 34 0 10-8 19-8 29 0 15 13 25 36 25s36-10 36-25c0-10-8-19-8-29 0-20-11-34-28-34z"/>
+          <ellipse cx="50" cy="57" rx="4" ry="6"/>
+          <ellipse cx="78" cy="57" rx="4" ry="6"/>
+          <path fill="#111827" d="M49 74c9 7 21 7 30 0-4 13-26 13-30 0z"/>
+          <path fill="#f59e0b" d="M29 91c12-5 26-3 35 5-13 6-27 5-35-5z"/>
+        </svg>
+        <span>Linux</span>
+      </div>
+
+      <!-- Git -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Git">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#f05032"/>
+          <path fill="#fff" d="M91 54L74 37a7 7 0 0 0-12 5v9l-15 15V55a8 8 0 1 0-8 0v18a8 8 0 0 0 8 8h16a8 8 0 1 0 8-8V59l12-12 14 14a8 8 0 1 0-6-7z"/>
+        </svg>
+        <span>Git</span>
+      </div>
+
+      <!-- Docker -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Docker">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#2496ed"/>
+          <g fill="#fff">
+            <rect x="25" y="57" width="13" height="10" rx="1"/>
+            <rect x="40" y="57" width="13" height="10" rx="1"/>
+            <rect x="55" y="57" width="13" height="10" rx="1"/>
+            <rect x="70" y="57" width="13" height="10" rx="1"/>
+            <rect x="40" y="45" width="13" height="10" rx="1"/>
+            <rect x="55" y="45" width="13" height="10" rx="1"/>
+            <rect x="55" y="33" width="13" height="10" rx="1"/>
+            <path d="M24 72c9 12 29 17 49 11 11-3 18-10 22-19-8 3-14 2-20-1H24z"/>
+          </g>
+        </svg>
+        <span>Docker</span>
+      </div>
+
+      <!-- Cloud -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Cloud">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#38bdf8"/>
+          <path fill="#fff" d="M38 91h52c12 0 20-8 20-18 0-9-7-17-16-18-3-14-15-23-29-23-13 0-24 8-28 20-13 1-23 10-23 22 0 10 9 17 24 17z"/>
+        </svg>
+        <span>Cloud</span>
+      </div>
+
+      <!-- Networks -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Networks">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#6366f1"/>
+          <g fill="none" stroke="#fff" stroke-width="7">
+            <path d="M64 38v25M64 63L38 86M64 63l26 23"/>
+            <circle cx="64" cy="31" r="9" fill="#6366f1"/>
+            <circle cx="32" cy="92" r="9" fill="#6366f1"/>
+            <circle cx="96" cy="92" r="9" fill="#6366f1"/>
+          </g>
+        </svg>
+        <span>Networks</span>
+      </div>
+
+      <!-- CyberSecurity -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="CyberSecurity">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#22c55e"/>
+          <path fill="#fff" d="M64 22l35 13v25c0 22-14 38-35 47-21-9-35-25-35-47V35l35-13z"/>
+          <rect x="48" y="58" width="32" height="25" rx="4" fill="#22c55e"/>
+          <path fill="#fff" d="M54 58v-7c0-14 20-14 20 0v7h-7v-7c0-5-6-5-6 0v7h-7z"/>
+        </svg>
+        <span>CyberSecurity</span>
+      </div>
+
+      <!-- Windows -->
+      <div class="skill">
+        <svg class="skill-icon" viewBox="0 0 128 128" aria-label="Windows">
+          <rect x="8" y="8" width="112" height="112" rx="24" fill="#0078d4"/>
+          <path fill="#fff" d="M24 28l37-5v39H24V28zm43-6l37-5v45H67V22zM24 68h37v39l-37-5V68zm43 0h37v45l-37-5V68z"/>
+        </svg>
+        <span>Windows</span>
+      </div>
+
     </div>
+
+    <div class="section-title">Fun Facts</div>
 
     <div class="facts">
-      <div class="section-title">Fun Facts</div>
-      <p class="fact">
-        🍳 <strong>Suka masak</strong> &nbsp; • &nbsp;
-        🚀 <strong>Suka cabaran!</strong>
-      </p>
+      <div class="fact">🍳 Suka masak</div>
+      <div class="fact">🚀 Suka cabaran!</div>
     </div>
 
-    <div class="terminal">
-      <span>illyas@it-engineer:~$</span> solve --challenge
+    <div class="footer">
+      © 2026 Illyas Hakim · IT Engineer
     </div>
 
   </main>
