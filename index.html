@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illyas Hakim — IT Engineer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      color: #f5f7fa;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.12), transparent 35%),
+        radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.10), transparent 35%),
+        #080b12;
+    }
+
+    .profile-card {
+      width: 100%;
+      max-width: 520px;
+      padding: 42px;
+      text-align: center;
+      background: rgba(17, 24, 39, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #fff;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      box-shadow: 0 10px 35px rgba(59, 130, 246, 0.3);
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .role {
+      color: #60a5fa;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      color: #aab3c2;
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #697386;
+      margin-bottom: 14px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px;
+      margin-bottom: 30px;
+    }
+
+    .skill {
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #dbeafe;
+      background: rgba(37, 99, 235, 0.12);
+      border: 1px solid rgba(96, 165, 250, 0.18);
+      transition: 0.25s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-2px);
+      background: rgba(37, 99, 235, 0.22);
+      border-color: rgba(96, 165, 250, 0.4);
+    }
+
+    .facts {
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .fact {
+      color: #cbd5e1;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .fact strong {
+      color: #fff;
+    }
+
+    .terminal {
+      margin-top: 28px;
+      padding: 14px 18px;
+      text-align: left;
+      border-radius: 12px;
+      background: #06080d;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      color: #86efac;
+    }
+
+    .terminal span {
+      color: #64748b;
+    }
+
+    @media (max-width: 480px) {
+      .profile-card {
+        padding: 32px 22px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="profile-card">
+
+    <div class="avatar">IH</div>
+
+    <h1>Illyas Hakim</h1>
+    <div class="role">IT Engineer</div>
+
+    <p class="intro">
+      IT Engineer yang minat membina, mengurus dan menyelesaikan
+      cabaran berkaitan infrastruktur, sistem, rangkaian dan teknologi.
+    </p>
+
+    <div class="section-title">Technical Skills</div>
+
+    <div class="skills">
+      <span class="skill">Linux</span>
+      <span class="skill">Git</span>
+      <span class="skill">Docker</span>
+      <span class="skill">Cloud</span>
+      <span class="skill">Networks</span>
+      <span class="skill">CyberSecurity</span>
+      <span class="skill">Windows</span>
+    </div>
+
+    <div class="facts">
+      <div class="section-title">Fun Facts</div>
+      <p class="fact">
+        🍳 <strong>Suka masak</strong> &nbsp; • &nbsp;
+        🚀 <strong>Suka cabaran!</strong>
+      </p>
+    </div>
+
+    <div class="terminal">
+      <span>illyas@it-engineer:~$</span> solve --challenge
+    </div>
+
+  </main>
+
+</body>
+</html>
